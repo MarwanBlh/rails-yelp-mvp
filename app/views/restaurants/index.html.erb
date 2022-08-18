@@ -1,0 +1,19 @@
+<h1>All restaurants</h1>
+
+<div class="row">
+  <% @restaurants.each do |restaurant| %>
+    <div class="col-sm-12 col-md-4 mb-2">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><%= restaurant.name %></h5>
+          <ul>
+            <li>category: <%= restaurant.category %></li>
+            <li>address: <%= restaurant.address %></li>
+            <li>tel: <%= restaurant.phone_number %></li>
+          </ul>
+          <a href="restaurants/<%= restaurant.id%>" class="btn btn-outline-primary">Details</a>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col">
+    <h1> <%= @restaurant.name %></h1>
+    <h2>category: <%= @restaurant.category %></h2>
+    <h2>address: <%= @restaurant.address %></h2>
+    <h2>tel: <%= @restaurant.phone_number %></h2>
+     <a href="<%=@restaurant.id%>/reviews/new" class="btn btn-outline-primary">Add review</a>
+  </div>
+</div>
